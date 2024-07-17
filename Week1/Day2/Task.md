@@ -4,7 +4,7 @@
 
 2. Print all odd numbers between 2 and 50.
 
-3. Print all prime numbers up to 50.
+3. Print all prime numbers up to 50. (Complete using a While Loop, The op should not print 7)
 
 4. Grade Calculation:
    Write a JavaScript program that takes a student's numerical grade as input (ranging from 0 to 100) and outputs their corresponding letter grade based on the following scale:
