@@ -57,12 +57,45 @@
 // console.log(array);
 
 
-var arrayNum=[1,2,10,3,100,4,12,15,14];
+// var arrayNum=[1,2,10,3,100,4,12,15,14];
 // arrayNum.sort((a,b)=>a-b);
 // console.log(arrayNum);
 
 // Join()
-console.log(arrayNum.join());
+// console.log(arrayNum.join());
+
+
+
+// const numbers = [1, 2, 3, 4, 5];
+// Filter
+// Used to filter an array 
+
+// var oddNumbers=numbers.filter(function(num,index,arr){
+//     return num % 2 != 0;
+// });
+// console.log(oddNumbers); 
+// console.log(numbers);
+
+
+// Map
+// To perform operation on array elements and store it in new array
+// var addTwo=numbers.map(function(num,index,arr){
+//     return num+2;
+// });
+// console.log(addTwo); 
+// console.log(numbers);
+
+
+// Reduce
+// const numbers = [1, 2, 3, 4, 5];
+// var sum=numbers.reduce(function(acc,num,index,arr){
+//     console.log("acc: "+ acc+ " num: " + num+ " index:"+ index +"arr: " + arr);
+//     return acc+num;
+// });
+// console.log(sum);
+
+
+
 
 
 
