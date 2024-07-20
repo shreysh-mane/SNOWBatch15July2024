@@ -82,22 +82,27 @@
 
 
 // function changeText(){
-
-
+//     // console.log("Got Clicked");
+    
+//     // console.log(event);
+//     // console.log(event.target);
+//     // console.log(event.type);
+//     // console.log(event.target.innerHTML);
+//     // event.target.innerHTML="Bye";
 // }
 
 
 
 // Adding event listeners
-// var head2Ele = document.getElementById("head2");
+var head2Ele = document.getElementById("head2");
 // console.log(head2Ele);
 
 
-// function handler2(){
+function handler2(){
+    // console.log("Got Clicked");
+    head2Ele.innerHTML="Bye";
+}
 
-//     head2Ele.innerHTML="Bye";
-// }
 
 
-
-// head2Ele.addEventListener('click',handler2);
+head2Ele.addEventListener('click',handler2);
