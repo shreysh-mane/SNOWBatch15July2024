@@ -103,6 +103,7 @@ function handler2(){
     // console.log("Got Clicked");
     head2Ele.innerHTML="Bye";
     // head2Ele.style.color="Red";
+    
 }
 
 
