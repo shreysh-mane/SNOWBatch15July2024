@@ -4,7 +4,7 @@
 // console.log(document.body);
 
 // console.log(document.body.childNodes);
-// console.log(document.body.children[2].children[0]);
+// console.log(document.body.children[0].children[0]);
 
 
 //__________________
@@ -17,41 +17,87 @@
 // querySelectorAll: Selects all elements that match a CSS selector.
 
 // Selecting by ID
-// let container = document.getElementById('container');
+// var container = document.getElementById('container');
+// console.log(container);
 
 // Selecting by class name
-// let paragraphs = document.getElementsByClassName('text');
+// var paragraphs = document.getElementsByClassName('text');
+// console.log(paragraphs[1]);
 
 // Selecting by tag name
-// let divs = document.getElementsByTagName('div');
+// var divs = document.getElementsByTagName('div');
+// console.log(divs);
 
 // Selecting with querySelector
  // querySelector
  // Id => #<NameOfID>
  // Class => .<NameOfClass>
  // Tag => <TagName>
-// let firstParagraph = document.querySelector('.text');
+// var firstParagraph = document.querySelector('.text');
+// console.log(firstParagraph);
 
 // Selecting with querySelectorAll
-// let allParagraphs = document.querySelectorAll('.text');
+// var allParagraphs = document.querySelectorAll('.text');
+// console.log(allParagraphs);
 
 
 // __________________
-// var greetEle3= document.getElementById('greetMsg2');
+// var greetEle= document.getElementById('greetMsg');
+// var greetEle2= document.getElementById('greetMsg2');
+// console.log(greetEle);
 
 // Access the HTML element content
 // innerHTML , textContent
-// console.log(greetEle.innerHTML);
-// console.log(greetEle3.textContent);
+// var h1Content=greetEle.innerHTML;
+// var h2Content=greetEle2.innerHTML;
+// console.log(h1Content); //Hii
+// console.log(h1Content); //Hii
 
 
 // Modify text of an HTML element.
 // greetEle.innerHTML="<ul><li> Bye</li></ul>";
-// greetEle3.textContent="<ul><li> Bye<li></ul>";
+// greetEle2.textContent="<ul><li> Bye<li></ul>";
 
 
 // Modifying Styles:
 // style property: Allows you to directly set CSS properties.
 // Changing styles
-// firstParagraph.style.color = 'blue';
-// firstParagraph.style.fontSize = '20px';
+// greetEle2.style.color = 'blue';
+// greetEle2.style.fontSize = '20px';
+
+
+// Dynamically add Elements in web page
+
+// var ulElement=document.getElementById('list');
+// console.log(ulElement.innerHTML);
+// ulElement.innerHTML=ulElement.innerHTML+'<li>Banana</li>';
+
+
+
+// ___________________________________
+
+// 2 ways to attach an event to an element
+// 1. Directly add event to that html element
+// 2. Add evenlistener in JS
+
+
+// function changeText(){
+
+
+// }
+
+
+
+// Adding event listeners
+// var head2Ele = document.getElementById("head2");
+// console.log(head2Ele);
+
+
+// function handler2(){
+
+//     head2Ele.innerHTML="Bye";
+// }
+
+
+
+// head2Ele.addEventListener('click',handler2);
