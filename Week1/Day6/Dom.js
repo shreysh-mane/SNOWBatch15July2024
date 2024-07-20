@@ -95,14 +95,16 @@
 
 // Adding event listeners
 var head2Ele = document.getElementById("head2");
-// console.log(head2Ele);
+var buttonEle= document.getElementById("btn1");
+// console.log(buttonEle);
 
 
 function handler2(){
     // console.log("Got Clicked");
     head2Ele.innerHTML="Bye";
+    // head2Ele.style.color="Red";
 }
 
 
 
-head2Ele.addEventListener('click',handler2);
+buttonEle.addEventListener('click',handler2);
