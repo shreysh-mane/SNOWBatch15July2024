@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1. Introduction to Errors
+        // In programming, errors are unexpected issues that can occur during the execution of a program. Handling these errors gracefully is crucial for building robust and user-friendly applications.
+        // To handel these errors we use try-catch statement
+//         try {
+//     // Code that may throw an error
+// } catch (error) {
+//     // Code to handle the error
+// }
+        
+
+        console.log("Starting of code");
+        var backendJSON='{name":"Shreysh","City":"Pune"}';
+        try{
+            console.log("Inside Try");
+            var personInfo= JSON.parse(backendJSON); // Moved to catch block because of erro
+            console.log(personInfo.name);
+
+        }catch(error){
+            console.log("Inside catch");
+            console.log("Error Info: "+ error.message);
+        }finally{
+            console.log("Inside Finally");
+        }
+
+        console.log("Ending of code");
+
+
+
+
+
+    </script>
+
+</body>
+</html>
