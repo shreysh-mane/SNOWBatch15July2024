@@ -9,11 +9,20 @@
 
     <script>
 
-        fetch('https://potterapi-fedeperin.vercel.app/es/characters?search=Weasley')
-        .then((resp)=>resp.json())
-        .then(data=>console.log(data)
-        ).catch(error => console.log("Error: "+ error));
-            
+        fetch('http://openlibrary.org/people/george08/lists.json')
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){
+            // console.log(data);
+            var entriesArray=data.entries;
+            for(var i=0;i<entriesArray.length;i++){
+                console.log(entriesArray[i].name);
+            }
+
+        }).catch(function(error) {
+            console.log(error);
+        });
 
 
     </script>
